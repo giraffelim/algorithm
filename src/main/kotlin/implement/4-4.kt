@@ -11,7 +11,7 @@ fun solutionByMe(sc: Scanner, initData: GameInitData) {
         val movement = Array(initData.n) { IntArray(initData.m) }
         // 바라보는 방향에 따라 더해야 하는 값(캐릭터는 현재 방향을 기준으로 왼쪽으로 이동)
         val dx = listOf(-1, 0, 1, 0)
-        val dy = listOf(0, -1, 0, 1)
+        val dy = listOf(0, 1, 0, -1)
         // 맵 초기화
         for (i in 0 until initData.n) {
             for (j in 0 until initData.m) {

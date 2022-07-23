@@ -22,9 +22,12 @@ fun main() {
     arrB.sortDescending()
 
     for (i in 0 until k) {
-        val temp = arrA[i]
-        arrA[i] = arrB[i]
-        arrB[i] = temp
+        if (arrA[i] < arrB[i]) {
+            val temp = arrA[i]
+            arrA[i] = arrB[i]
+            arrB[i] = temp
+        }
+        else break
     }
 
     println(arrA.sum())

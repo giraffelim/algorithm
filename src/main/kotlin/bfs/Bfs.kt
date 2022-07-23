@@ -2,8 +2,8 @@ package bfs
 
 import java.util.LinkedList
 
-var visited = BooleanArray(9)
-var graph = ArrayList<ArrayList<Int>>()
+private var visited = BooleanArray(9)
+private var graph = ArrayList<ArrayList<Int>>()
 
 fun bfs(start: Int) {
     val q = LinkedList<Int>()
@@ -40,9 +40,6 @@ fun main() {
 
     // 노드 3에 연결된 노드 정보 저장
     graph[3].addAll(listOf(1, 4, 5))
-
-    // 노드 4에 연결된 노드 정보 저장
-    graph[4].addAll(listOf(3, 5))
 
     // 노드 4에 연결된 노드 정보 저장
     graph[4].addAll(listOf(3, 5))

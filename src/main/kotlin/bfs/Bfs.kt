@@ -5,7 +5,7 @@ import java.util.LinkedList
 private var visited = BooleanArray(9)
 private var graph = ArrayList<ArrayList<Int>>()
 
-fun bfs(start: Int) {
+private fun bfs(start: Int) {
     val q = LinkedList<Int>()
     q.offer(start)
     // 현재 노드를 방문 처리

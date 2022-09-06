@@ -1,9 +1,9 @@
 package dfs
 
-var visited = BooleanArray(9)
-var graph = ArrayList<ArrayList<Int>>()
+private var visited = BooleanArray(9)
+private var graph = ArrayList<ArrayList<Int>>()
 
-fun dfs(x: Int) {
+private fun dfs(x: Int) {
     visited[x] = true
     print("$x ")
     for (i in graph[x].indices) {

@@ -40,7 +40,7 @@ fun main() {
     result.sorted().forEach { println(it) }
 }
 
-fun dfs(x: Int, y: Int) {
+private fun dfs(x: Int, y: Int) {
     if (x < 0 || x >= n || y < 0 || y >= n) return
 
     if (graph[x][y] == 1 && visited[x][y] == 0) {

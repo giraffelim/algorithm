@@ -1,4 +1,4 @@
-package greedy
+package programmers
 
 fun main() {
     val result = solution(intArrayOf(3, 5, 1, 5, 4, 3), 20)

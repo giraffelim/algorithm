@@ -32,7 +32,7 @@ private fun isCorrect(str: String): Boolean {
     return true
 }
 
-fun solution(p: String): String {
+private fun solution(p: String): String {
     if (p.isEmpty()) return ""
 
     val correct = isCorrect(p)
